@@ -1,5 +1,8 @@
-package com.in28minutes.learnspringframework;
+package com.in28minutes.learnspringframework.helloworld;
 
+import com.in28minutes.learnspringframework.helloworld.Address;
+import com.in28minutes.learnspringframework.helloworld.HelloWorldConfiguration;
+import com.in28minutes.learnspringframework.helloworld.Person;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Arrays;
