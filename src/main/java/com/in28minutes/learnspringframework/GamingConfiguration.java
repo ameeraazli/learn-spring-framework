@@ -16,12 +16,10 @@ public class GamingConfiguration {
         return game;
     }
 
-    //var game = new MarioGame();
-    //var game = new SuperContraGame();
-    //var game = new PacmanGame(); //1: Object Creation
-//    var gameRunner = new GameRunner(game);
-    //2: Object Creation + Wiring of Dependencies (i.e. the game class is injected into the GameRunner class)
-    // 'game' is a dependency of the GameRunner class
+    @Bean
+    public GameRunner gameRunner(GamingConsole game){
+        var gameRunner = new GameRunner(game);
+        return gameRunner;
+    }
 
-//    gameRunner.run();
 }

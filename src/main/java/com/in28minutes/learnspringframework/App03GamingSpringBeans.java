@@ -12,7 +12,7 @@ public class App03GamingSpringBeans {
                              (GamingConfiguration.class)) {
 
             context.getBean(GamingConsole.class).up();
-            
+            context.getBean(GameRunner.class).run();
         }
     }
 }
